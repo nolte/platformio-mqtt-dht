@@ -18,26 +18,32 @@ Publish the DHT Information all minute to a central MQTT topic `/iot/dht`, after
 
 ### Common Parameters
 
- -DDEBUG 
- -DDHTPIN=2 
- -DDHTTYPE=DHT11 
- -DUPDATEINTERVALL=30
- '-DMQTT_DEVICE_ID="dht-livingroom-node"' 
- '-DMQTT_HOST="maxchen"'  
+| Parameter                                | Description                               |
+|------------------------------------------|-------------------------------------------|
+| -DDEBUG                                  | Enable the serial out debug statements.   |
+| -DDHTPIN=2                               | The Analog input pin from the DHT Sensor. |
+| -DDHTTYPE=DHT11                          | The DHT Type (DHT22 or DHT11)             |
+| -DUPDATEINTERVALL=30                     | The Message publishing intervall.         |
+| '-DMQTT_DEVICE_ID="dht-livingroom-node"' | The MQTT Device Id (must unique)          |
+| '-DMQTT_HOST="maxchen"'                  | The Hostname from the MQTT Broker         |
 
 ### NodeMCU Parameters
 
- '-DWLAN_SSID="{{WLAN SSID}}"' 
- '-DWLAN_PASSWORD="{{WLAN PASSWORD}}"' 
- -DESPSLEEP 
- -DWIFI 
+| Parameter                             | Description                            |
+|---------------------------------------|----------------------------------------|
+| '-DWLAN_SSID="{{WLANSSID}}"'          | Your WLAN SSID                         |
+| '-DWLAN_PASSWORD="{{WLAN PASSWORD}}"' | Your WLAN Password                     |
+| -DESPSLEEP                            | Enable the `ESP Deep Sleep` function.  |
+| -DWIFI                                | Enable the `WiFi` function.            |
 
 ### Arduino Parameters
 
- -DETH
+| Parameter | Description                                    |
+|-----------|------------------------------------------------|
+| -DETH     | Enable the `Ethernet Network Shield` function. |
 
 ## Hardware
- 
+
 
 ### NodeMCU Setup
  - [NodeMCU](http://nodemcu.com/index_en.html) Deleloper Board 
