@@ -10,9 +10,10 @@ Publish the DHT Information all minute to a central MQTT topic `/iot/dht`, after
 
 ## Dependencies
 
- - [MQTT Client](http://platformio.org/lib/show/89/PubSubClient)
- - [Arduino Json](http://platformio.org/lib/show/64/ArduinoJson)
- - [MQTT Device Alive](http://platformio.org/lib/show/365/MQTT%20Device%20Alive)
+ - [DHT Sensor Library](http://platformio.org/lib/show/19/DHT%20sensor%20library)
+ - [Arduino Json](http://platformio.org/lib/show/64/ArduinoJson)   
+ - [MQTT PubSubClient](http://platformio.org/lib/show/89/PubSubClient)
+ - [MQTT AliveMessage](http://platformio.org/lib/show/365/MQTT%20Device%20Alive) 
 
 ## Schaltung
 
@@ -62,10 +63,6 @@ Publish the DHT Information all minute to a central MQTT topic `/iot/dht`, after
  - [Ethernet Shield](https://www.arduino.cc/en/Main/ArduinoEthernetShield)
  - DHT22
  - 10kΩ
- 
-# Libs
- - [DHT Sensor Library](http://platformio.org/lib/show/19/DHT%20sensor%20library)
- - [Arduino Json](http://platformio.org/lib/show/64/ArduinoJson)   
- - [MQTT PubSubClient](http://platformio.org/lib/show/89/PubSubClient)
- - [MQTT AliveMessage](http://platformio.org/lib/show/365/MQTT%20Device%20Alive) 
+
+
  
