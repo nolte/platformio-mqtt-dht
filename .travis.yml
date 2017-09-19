@@ -7,3 +7,6 @@ install:
 
 script:
     - platformio run
+    
+notifications:
+  webhooks: https://keenio-gateway.herokuapp.com/build    
